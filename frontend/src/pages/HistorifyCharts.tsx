@@ -736,7 +736,7 @@ export default function HistorifyCharts() {
               ))}
               <DropdownMenuItem asChild>
                 <a
-                  href="https://docs.openalgo.in"
+                  href="https://docs.zerotouchalgo.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

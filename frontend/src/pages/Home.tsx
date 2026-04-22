@@ -1,11 +1,6 @@
 import {
-  BookOpen,
-  ClipboardList,
-  Download,
-  HelpCircle,
   LogIn,
   Menu,
-  MessageCircle,
   Moon,
   Sun,
 } from 'lucide-react'
@@ -22,10 +17,6 @@ export default function Home() {
 
   const navLinks = [
     { href: '/', label: 'Home', internal: true },
-    { href: '/faq', label: 'FAQ', internal: true },
-    { href: 'https://openalgo.in/discord', label: 'Community', internal: false },
-    { href: 'https://openalgo.in/roadmap', label: 'Roadmap', internal: false },
-    { href: 'https://docs.openalgo.in', label: 'Docs', internal: false },
   ]
 
   return (
@@ -44,8 +35,8 @@ export default function Home() {
               </SheetTrigger>
               <SheetContent side="left" className="w-80">
                 <div className="flex items-center gap-2 mb-8">
-                  <img src="/logo.png" alt="OpenAlgo" className="h-8 w-8" />
-                  <span className="text-xl font-semibold">OpenAlgo</span>
+                  <img src="/logo.png" alt="ZeroTouchAlgo" className="h-8 w-8" />
+                  <span className="text-xl font-semibold">ZeroTouchAlgo</span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <Link
@@ -69,56 +60,13 @@ export default function Home() {
                     </svg>
                     Home
                   </Link>
-                  <Link
-                    to="/faq"
-                    className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-accent"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    <HelpCircle className="h-5 w-5" />
-                    FAQ
-                  </Link>
-                  <Link
-                    to="/download"
-                    className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    <Download className="h-5 w-5" />
-                    Download
-                  </Link>
-                  <a
-                    href="https://openalgo.in/discord"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-accent"
-                  >
-                    <MessageCircle className="h-5 w-5" />
-                    Community
-                  </a>
-                  <a
-                    href="https://openalgo.in/roadmap"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-accent"
-                  >
-                    <ClipboardList className="h-5 w-5" />
-                    Roadmap
-                  </a>
-                  <a
-                    href="https://docs.openalgo.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-accent"
-                  >
-                    <BookOpen className="h-5 w-5" />
-                    Docs
-                  </a>
                 </div>
               </SheetContent>
             </Sheet>
 
             <Link to="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="OpenAlgo" className="h-8 w-8" />
-              <span className="text-xl font-bold hidden sm:inline">OpenAlgo</span>
+              <img src="/logo.png" alt="ZeroTouchAlgo" className="h-8 w-8" />
+              <span className="text-xl font-bold hidden sm:inline">ZeroTouchAlgo</span>
             </Link>
           </div>
 
@@ -143,9 +91,6 @@ export default function Home() {
 
           {/* Right side */}
           <div className="flex items-center gap-2">
-            <Link to="/download">
-              <Button size="sm">Download</Button>
-            </Link>
             <Button
               variant="ghost"
               size="icon"
@@ -176,12 +121,6 @@ export default function Home() {
                 <Link to="/login">
                   <LogIn className="mr-2 h-5 w-5" />
                   Login
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link to="/download">
-                  <Download className="mr-2 h-5 w-5" />
-                  Download
                 </Link>
               </Button>
             </div>

@@ -120,7 +120,7 @@ export const useAlertStore = create<AlertStore>()(
       },
     }),
     {
-      name: 'openalgo-alerts',
+      name: 'zerotouch-alerts',
       partialize: (state) => ({
         toastsEnabled: state.toastsEnabled,
         soundEnabled: state.soundEnabled,

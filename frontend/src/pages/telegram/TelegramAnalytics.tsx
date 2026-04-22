@@ -248,7 +248,7 @@ export default function TelegramAnalytics() {
               <TableHeader>
                 <TableRow>
                   <TableHead>User</TableHead>
-                  <TableHead>OpenAlgo Account</TableHead>
+                  <TableHead>ZeroTouchAlgo Account</TableHead>
                   <TableHead>Status</TableHead>
                   <TableHead>Joined</TableHead>
                   <TableHead>Last Active</TableHead>
@@ -274,8 +274,8 @@ export default function TelegramAnalytics() {
                         </div>
                       </TableCell>
                       <TableCell>
-                        {user.openalgo_username ? (
-                          <Badge variant="outline">{user.openalgo_username}</Badge>
+                        {user.zerotouch_username ? (
+                          <Badge variant="outline">{user.zerotouch_username}</Badge>
                         ) : (
                           <span className="text-muted-foreground">-</span>
                         )}
