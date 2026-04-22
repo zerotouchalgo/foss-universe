@@ -1,0 +1,90 @@
+venopenalgo
+.venv/
+.env
+openalgo.db
+*.db-shm
+*.db-wal
+*.db-journal
+.flaskenv
+*.pyc
+__pycache__/
+instance/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/settings.json
+.claude/settings.local.json
+.python-version
+config.ini
+.venvv
+.cloudflared/*.json
+
+# DB Files, CSV Files and Log/Tmp Files
+tmp/
+.numba_cache/
+.llvm_tmp/
+
+*.egg-info/
+*.db
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.log
+*.jsonl
+*.tmp
+checkpoint.txt
+checkpoints.json
+
+# Strategy encryption key
+db/strategy_encryption.key
+
+# CSV Files (except specific data files)
+*.csv
+!symbols.csv
+!all_symbols.csv
+!data/qtyfreeze.csv
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node modules (all directories)
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Frontend specific
+frontend/dist/
+frontend/.cache/
+*.local
+
+# npm cache
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Windows NUL file
+nul
+
+# ---- FOSS Universe: local data (created at runtime) ---- #
+# These are bind-mounted at runtime — created on VPS after clone
+data/
+ssl/
+backups/
+
+# Docker compose local override (local dev only)
+docker-compose.local.yml
+
+# Encrypted secrets (decrypted on VPS via decrypt.sh)
+.env.enc
