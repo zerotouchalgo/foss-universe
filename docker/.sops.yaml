@@ -1,0 +1,11 @@
+# .sops.yaml — SOPS configuration
+# Age public key must be added after running setup-sops.sh
+# on the VPS (see setup-sops.sh output).
+
+creation_rules:
+  - path_regex: '\.env\.enc$'
+    age: >-
+      # REPLACE THIS with your actual age public key.
+      # Run: age-keygen -y ~/.config/sops/age/keys.txt
+      # Then paste the output here.
+      age1REPLACE_WITH_YOUR_ACTUAL_AGE_PUBLIC_KEY_HERE
